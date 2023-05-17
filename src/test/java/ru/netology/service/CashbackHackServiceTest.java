@@ -27,9 +27,9 @@ public class CashbackHackServiceTest {
     @Test
     public void shouldNotSuggestToBuyMore() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 2000;
+        int amount = 1000;
         int expected = service.remain(amount);
-        int actual = 1000;
+        int actual = 0;
         assertEquals(actual, expected);
     }
 
